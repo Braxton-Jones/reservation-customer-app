@@ -83,7 +83,7 @@ function Form() {
 		};
 		const { name, email, people, date } = formattedData;
 		const postedReservation = { name, email, people, date };
-		const response = await fetch('http://localhost:4000/api/reservations/', {
+		const response = await fetch('https://reservation-api-ujvu.onrender.com/', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
